@@ -3,7 +3,7 @@ description: "GitHub Action that builds HTML from PHP files in a repository base
 runs:
   using: "composite"
   steps:
-    - run: ./gnerate-html.sh
+    - run: ./generate-html.sh
       shell: bash
 inputs:
   less_file_path:
