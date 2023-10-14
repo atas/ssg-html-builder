@@ -3,9 +3,9 @@ description: "GitHub Action that builds HTML from PHP files in a repository base
 runs:
   using: "composite"
   steps:
-    - run: pwd && ls -lha
+    - run: echo inputs.less_file_path is ${{ inputs.less_file_path }}
       shell: bash
-    - run: echo "$GITHUB_ACTION_PATH" && ls -lha "$GITHUB_ACTION_PATH"
+    - run: echo INPUT_LESS_FILE_PATH is $INPUT_LESS_FILE_PATH
       shell: bash
     - run: echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
       shell: bash
