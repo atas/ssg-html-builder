@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo LESS_FILE_PATH is "$LESS_FILE_PATH"
-
 # Create a symbolic link to the current directory
 # if it doesn't exist
 if [[ ! -L "/workspace" ]]; then
@@ -96,7 +94,7 @@ if [[ -n "$LESS_FILE_PATH" ]]; then
     lessc html/"$LESS_FILE_PATH" html/"${LESS_FILE_PATH%.less}".css
     rm -f html/assets/styles/*.less
 else
-    echo "Skipping less"
+    echo "Skipping less as LESS_FILE_PATH is not set"
 fi
 #endregion
 
