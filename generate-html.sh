@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LESS_FILE="$INPUT_LESS_FILE_PATH"
+echo SSG_LESS_FILE_PATH is "$SSG_LESS_FILE_PATH"
 
 # Create a symbolic link to the current directory
 # if it doesn't exist
@@ -91,9 +91,9 @@ done
 cp -R assets html/assets
 
 #region less
-if [[ -n "$LESS_FILE" ]]; then
-    echo "Compiling less at $LESS_FILE"
-    lessc html/"$LESS_FILE" html/"${LESS_FILE%.less}".css
+if [[ -n "$SSG_LESS_FILE_PATH" ]]; then
+    echo "Compiling less at $SSG_LESS_FILE_PATH"
+    lessc html/"$SSG_LESS_FILE_PATH" html/"${SSG_LESS_FILE_PATH%.less}".css
     rm -f html/assets/styles/*.less
 else
     echo "Skipping less"
