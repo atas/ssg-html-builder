@@ -8,7 +8,7 @@ Add this to your GitHub Actions Workflow
 
 ```
 - name: Run Ata's SSG HTML Builder
-  uses: atas/ssg-html-builder@1.0
+  uses: atas/ssg-html-builder@2.1
   with:
     less_file_path: 'assets/styles/style.less'
 ```
