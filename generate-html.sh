@@ -44,6 +44,7 @@ function curl_and_save() {
 #region Building HTML files
 rm -rf html
 mkdir -p html
+chmod 777 tmp
 
 touch build.lock # we are running the build process.
 trap "rm -rf build.lock" EXIT
