@@ -1,5 +1,7 @@
 # ssg-html-builder
 
+> Please use [atas/actions/ssg-html-builder](https://github.com/atas/actions) instead
+
 Ata's Static Site Generator HTML Builder Github Action
 
 This action builds HTML files from the PHP files in https://github.com/atas/ssg
